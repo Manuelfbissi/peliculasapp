@@ -85,6 +85,7 @@ function createWatchlistElement(movie) {
     return `
       <div class="watchlist">
         <div class="details">
+        <img src="${movie.Poster}" alt="poster">
           <h2>${movie.Title}</h2>
           <p>Publicación: ${movie.Year}</p>
           <button onclick="removeFromWatchlist('${movie.imdbID}')">Eliminar</button>
