@@ -1,0 +1,171 @@
+
+  body {
+    background-color:whitesmoke;
+  
+  }
+
+  .trailers{
+    background-color: #010101;
+    color: white;
+  }
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #010101;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b000b3;
+  }
+  
+  .movie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .movie img {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  .movie .details {
+    flex: 1;
+  }
+  
+  .movie .details h2 {
+    margin: 0;
+  }
+  
+  .movie .details p {
+    margin: 5px 0;
+  }
+  
+  .watchlist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .watchlist .details {
+    flex: 1;
+  }
+  
+  .watchlist .details h2 {
+    margin: 0;
+  }
+  
+  .watchlist .details p {
+    margin: 5px 0;
+  }
+  
+  .watchlist .remove-btn {
+    background-color: #dc3545;
+  }
+  
+  .watchlist .remove-btn:hover {
+    background-color: #bd2130;
+  }
+  
+  p{
+    max-width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    border: solid black 2px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-logo{
+ max-width: 20%;
+  
+}
+
+.neon-button {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(59, 58, 58, 0.3);
+}
+
+.neon-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(255, 93, 255, 0.891);
+  transform: rotate(60deg);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.neon-button:hover {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 93, 255, 0.891);
+}
+
+
+.input-neon {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(59, 58, 58, 0.3);
+}
+
+.input-neon::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(255, 93, 255, 0.891);
+  transform: rotate(60deg);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+      
+  
