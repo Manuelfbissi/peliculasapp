@@ -54,6 +54,45 @@ function searchMovies() {
   
     return movieElement;
   }
+
+  // Vista 2 - Página de "Peliculas a Mirar"
+
+function addToWatchlist(movie) {
+  const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+  watchlist.push(movie);
+  localStorage.setItem('watchlist', JSON.stringify(watchlist));
+  renderWatchlist();
+}
+
+function removeFromWatchlist(movieId) {
+    let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+    watchlist = watchlist.filter(item => item.imdbID !== movieId);
+    localStorage.setItem('watchlist', JSON.stringify(watchlist));
+    renderWatchlist();
+  }
+
+function renderWatchlist() {
+  const watchlistContainer = document.getElementById('watchlistContainer');
+  const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+
+  watchlistContainer.innerHTML = watchlist.length === 0
+    ? 'No tienes peliculas en tu lista de Peliculas a Mirar.'
+    : watchlist.map(movie => createWatchlistElement(movie)).join('');
+
+}
+
+function createWatchlistElement(movie) {
+    return `
+      <div class="watchlist">
+        <div class="details">
+          <h2>${movie.Title}</h2>
+          <p>Publicación: ${movie.Year}</p>
+          <button onclick="removeFromWatchlist('${movie.imdbID}')">Eliminar</button>
+        </div>
+      </div>
+    `;
+  }
+  
   
 
   
